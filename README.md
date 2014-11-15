@@ -1,3 +1,6 @@
+[![Gem Version](https://img.shields.io/gem/v/phamilie.svg?style=flat)](https://rubygems.org/gems/phamilie)
+[![Build Status](https://img.shields.io/travis/toy/phamilie/master.svg?style=flat)](https://travis-ci.org/toy/phamilie)
+
 # Phamilie
 
 Originally forked from [deepfryed/similie](https://github.com/deepfryed/similie).
