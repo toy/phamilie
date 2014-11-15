@@ -1,6 +1,6 @@
 language: ruby
 rvm: 1.9.3
+before_script: (cd ext/phamilie && ruby extconf.rb && make)
 script: bundle exec rspec
-before_install:
 matrix:
   fast_finish: true
