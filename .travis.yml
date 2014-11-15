@@ -1,5 +1,6 @@
 language: ruby
 rvm: 1.9.3
+before_install: sudo apt-get install cimg-dev
 before_script: (cd ext/phamilie && ruby extconf.rb && make)
 script: bundle exec rspec
 matrix:
