@@ -4,7 +4,9 @@ rvm:
   - '2.2.6'
   - '2.3.3'
   - '2.4.0'
-before_install: sudo apt-get install cimg-dev
+before_install:
+  - sudo apt-get install cimg-dev
+  - gem update bundler
 before_script: (cd ext/phamilie && ruby extconf.rb && make)
 script: bundle exec rspec
 matrix:
