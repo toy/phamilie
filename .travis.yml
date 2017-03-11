@@ -12,5 +12,5 @@ script: bundle exec rspec
 matrix:
   include:
     - env: CHECK_RUBIES=✓
-      rvm: '2'
-      script: bundle exec travis_check_rubies
+      rvm: '2.4.0'
+      script: bundle exec travis_check_rubies --exclude 2.0,2.1
