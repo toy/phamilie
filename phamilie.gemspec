@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version           = '0.1.0'
   s.summary           = 'compute image fingerprints and similarity'
   s.description       = 'phamilie is an image fingerprinting & comparison utility'
-  s.homepage          = 'http://github.com/toy/phamilie'
+  s.homepage          = 'https://github.com/toy/phamilie'
   s.authors           = ['Bharanee Rathna', 'Ivan Kuchin']
   s.license           = 'GPL'
 
