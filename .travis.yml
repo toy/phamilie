@@ -14,6 +14,6 @@ before_script: (cd ext/phamilie && ruby extconf.rb && make)
 script: bundle exec rspec
 matrix:
   include:
-    - env: CHECK_RUBIES=✓
+    - env: CHECK_RUBIES=1
       rvm: '2.6.5'
       script: bundle exec travis_check_rubies
