@@ -5,10 +5,10 @@ rvm:
   - '2.2.10'
   - '2.3.8'
   - '2.4.10'
-  - '2.5.8'
-  - '2.6.6'
-  - '2.7.2'
-  - '3.0.0'
+  - '2.5.9'
+  - '2.6.7'
+  - '2.7.3'
+  - '3.0.1'
 before_install:
   - sudo apt-get install cimg-dev
   - gem install bundler || gem install bundler --version '< 2'
@@ -17,5 +17,5 @@ script: bundle exec rspec
 matrix:
   include:
     - env: CHECK_RUBIES=1
-      rvm: '2.6.6'
+      rvm: '2.6.7'
       script: bundle exec travis_check_rubies
