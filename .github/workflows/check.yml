@@ -1,0 +1,30 @@
+name: check
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: 45 4 * * 2
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby:
+        - '2.2'
+        - '2.3'
+        - '2.4'
+        - '2.5'
+        - '2.6'
+        - '2.7'
+        - '3.0'
+      fail-fast: false
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "${{ matrix.ruby }}"
+        bundler-cache: true
+    - run: |
+        sudo apt-get install cimg-dev
+        (cd ext/phamilie && ruby extconf.rb && make)
+    - run: bundle exec rspec

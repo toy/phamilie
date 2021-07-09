@@ -1,5 +1,5 @@
 [![Gem Version](https://img.shields.io/gem/v/phamilie.svg?style=flat)](https://rubygems.org/gems/phamilie)
-[![Build Status](https://img.shields.io/travis/toy/phamilie/master.svg?style=flat)](https://travis-ci.org/toy/phamilie)
+[![Build Status](https://img.shields.io/github/workflow/status/toy/phamilie/check/master?logo=github)](https://github.com/toy/phamilie/actions/workflows/check.yml)
 
 # Phamilie
 
