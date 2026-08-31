@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.license           = 'GPL'
 
   s.metadata = {
+    'rubygems_mfa_required' => 'true',
     'bug_tracker_uri'   => "https://github.com/toy/#{s.name}/issues",
     'documentation_uri' => "https://www.rubydoc.info/gems/#{s.name}/#{s.version}",
     'source_code_uri'   => "https://github.com/toy/#{s.name}",
